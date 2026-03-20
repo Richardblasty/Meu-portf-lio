@@ -83,7 +83,6 @@ body {
     border-radius: 50%;
     border: 4px solid var(--vidro);
     animation: flutuar 5s ease-in-out infinite;
-    object-fit: cover;
 }
 
 h1 {
@@ -155,8 +154,6 @@ h1 {
     transition: all 0.5s ease;
     cursor: pointer;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .projetos-card:hover {
@@ -164,23 +161,14 @@ h1 {
     transform: translateY(-5px);
 }
 
-/* Ajuste principal para as imagens dos projetos */
 .projetos-imagens {
+    height: 180px;
     width: 100%;
-    height: 200px;
     object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.projetos-card:hover .projetos-imagens {
-    transform: scale(1.05);
 }
 
 .caixa-textos-projeto {
     padding: 1.2rem;
-    flex: 1;
 }
  
 .paragrafo-projetos {
@@ -192,7 +180,6 @@ h1 {
 .info-projetos {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
-    color: var(--primaria);
 }
 
 .contatos {
@@ -307,10 +294,6 @@ h1 {
     .contatos-titulo {
         font-size: 2.5rem;
     }
-    
-    .projetos-imagens {
-        height: 220px;
-    }
 }
 
 /* Desktop (acima de 1024px) */
@@ -339,10 +322,6 @@ h1 {
     
     .sobre-paragrafo {
         font-size: 1.2rem;
-    }
-    
-    .projetos-imagens {
-        height: 200px;
     }
 }
 
