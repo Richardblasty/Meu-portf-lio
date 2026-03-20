@@ -98,7 +98,7 @@
             const mensagem = document.getElementById('mensagem').value;
             const telefone = '5585996803306'
 
-            const texto = `Nome: ${nome}${mensagem}`
+            const texto = `Nome: ${nome}\nMensagem: ${mensagem}`
             const msgFormatada = encodeURIComponent(texto)
 
             const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
