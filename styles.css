@@ -118,12 +118,37 @@ h1 {
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
+    text-align: center; /* ADICIONADO: centraliza o conteúdo da caixa */
 }
 
 .sobre-paragrafo {
     text-align: center;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* Estilo do botão Saiba mais */
+.botao-saiba-mais {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    width: auto;
+    min-width: 120px;
+}
+
+.botao-saiba-mais:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
 .projetos {
@@ -294,6 +319,12 @@ h1 {
     .contatos-titulo {
         font-size: 2.5rem;
     }
+    
+    .botao-saiba-mais {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        min-width: 140px;
+    }
 }
 
 /* Desktop (acima de 1024px) */
@@ -369,5 +400,11 @@ h1 {
     .campo-form {
         padding: 0.7rem;
         font-size: 0.85rem;
+    }
+    
+    .botao-saiba-mais {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        min-width: 100px;
     }
 }
